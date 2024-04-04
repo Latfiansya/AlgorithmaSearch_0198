@@ -30,4 +30,7 @@ void input()
 
 void LinearSearch()
 {
-	
+	char ch; //Untuk input ..while
+	int ctr; //Jumlah perbandingan
+	int item; //Elemen yang dicari
+}
