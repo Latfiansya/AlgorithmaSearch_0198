@@ -37,10 +37,19 @@ void LinearSearch()
 	do
 	{
 		//Menerima angka yang dicari
-		cout << "\nEnter element you want to search : "; //step 1
+		cout << "\nEnter element you want to search : "; //Step 1
 		cin >> item;
 
 		ctr = 0;
-		i = 0; //step 2
+		i = 0; //Step 2
+		while (i < n) //Step 3
+		{
+			ctr++;
+			if (arr[i] == item)
+			{
+				cout << endl << item << "Found at position " << (i + 1) << endl; //Step 6
+			}
+		}
+
 	} while ((ch == 'y') || (ch == 'Y'));
 }
