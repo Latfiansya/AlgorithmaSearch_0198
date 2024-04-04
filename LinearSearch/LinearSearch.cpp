@@ -23,7 +23,7 @@ void input()
 	cout << "-----------------------\n\n";
 	for (i = 0; i < n; i++)
 	{
-		cout << "<" << (i + 1) << ">";
+		cout << "<" << (i + 1) << "> ";
 		cin >> arr[i];
 	}
 }
@@ -47,14 +47,14 @@ void LinearSearch()
 			ctr++;
 			if (arr[i] == item)
 			{
-				cout << endl << item << "Found at position " << (i + 1) << endl; //Step 6
+				cout << endl << item << " Found at position " << (i + 1) << endl; //Step 6
 				break;
 			}
 			i++; //Step 4
 		}
 		
 		if (i == n) //Step 5
-			cout << endl << item << "Not found in the array\n";
+			cout << endl << item << " Not found in the array\n";
 		cout << "\nNumber of comparisons : " << ctr << endl;
 
 		cout << "\nContinue search (y/n) : ";
@@ -64,5 +64,9 @@ void LinearSearch()
 
 void display()
 {
-
+	cout << "Array elements are : ";
+	for (i = 0; i < n; i++)
+		cout << arr[i] << " ";
+	cout << endl;
 }
+
