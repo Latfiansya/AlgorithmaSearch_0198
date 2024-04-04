@@ -50,6 +50,7 @@ void LinearSearch()
 				cout << endl << item << "Found at position " << (i + 1) << endl; //Step 6
 			}
 		}
+		i++; //Step 4
 
 	} while ((ch == 'y') || (ch == 'Y'));
 }
